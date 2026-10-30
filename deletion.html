@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrucțiuni Ștergere Date Utilizator — Iubește Sănătatea</title>
+    <meta name="description" content="Instrucțiuni oficiale pas cu pas pentru ștergerea datelor utilizatorilor în conformitate cu politicile Meta for Developers și GDPR.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #236B2B;
+            --primary-dark: #194F1F;
+            --primary-light: #E8F5E9;
+            --accent: #2E7D32;
+            --bg-page: #FAF9F6;
+            --bg-card: #FFFFFF;
+            --text-main: #1C2826;
+            --text-muted: #4F615A;
+            --border: #E5E9E5;
+            --shadow: 0 4px 20px -2px rgba(28, 40, 38, 0.05);
+            --radius-lg: 16px;
+            --radius-md: 10px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            background: #FFFFFF;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        .nav-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--primary-dark);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .brand-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--primary-light);
+            color: var(--primary);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-left: 18px;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .content-container {
+            max-width: 900px;
+            margin: 40px auto 80px;
+            padding: 0 24px;
+        }
+
+        .article-card {
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border);
+            padding: 48px;
+            box-shadow: var(--shadow);
+        }
+
+        .badge-doc {
+            display: inline-block;
+            background: var(--primary-light);
+            color: var(--primary);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2.3rem;
+            color: var(--primary-dark);
+            margin-bottom: 12px;
+            line-height: 1.25;
+        }
+
+        .meta-info {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 32px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            color: var(--primary-dark);
+            margin: 36px 0 16px;
+            font-weight: 700;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #2F3E37;
+        }
+
+        ol, ul {
+            margin: 12px 0 20px 24px;
+            color: #2F3E37;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        a:hover {
+            color: var(--primary-dark);
+        }
+
+        .step-box {
+            background: #F4F7F4;
+            border-radius: var(--radius-md);
+            padding: 24px;
+            margin: 20px 0;
+            border: 1px solid var(--border);
+        }
+
+        .step-box h3 {
+            color: var(--primary-dark);
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        footer {
+            background: #FFFFFF;
+            border-top: 1px solid var(--border);
+            padding: 30px 24px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            .article-card {
+                padding: 28px 20px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="brand">
+                <span class="brand-icon">🌿</span>
+                <span>Iubește Sănătatea</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Acasă</a>
+                <a href="privacy.html">Confidențialitate</a>
+                <a href="terms.html">Termeni</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-container">
+        <article class="article-card">
+            <div class="badge-doc">Meta Developers / User Data Deletion</div>
+            <h1>Instrucțiuni pentru Ștergerea Datelor Utilizatorilor</h1>
+            <div class="meta-info">
+                Conform politicilor Meta Platform for Developers (App ID: 1339377448285900 — Iubeste Sanatatea) și Art. 17 GDPR
+            </div>
+
+            <p>
+                La <strong>Iubește Sănătatea</strong>, respectăm confidențialitatea și dreptul dumneavoastră fundamental la ștergerea datelor cu caracter personal („dreptul de a fi uitat”).
+            </p>
+            <p>
+                Dacă ați interacționat cu aplicația noastră de Facebook, cu pagina noastră sau cu orice serviciu conectat și doriți ca datele dumneavoastră să fie eliminate, puteți urma oricare dintre pașii de mai jos.
+            </p>
+
+            <div class="step-box">
+                <h3>📌 Metoda 1: Ștergerea activității direct din contul de Facebook</h3>
+                <p>Puteți revoca accesul și solicita eliminarea datelor asociate profilului dumneavoastră direct din setările de confidențialitate Facebook:</p>
+                <ol>
+                    <li>Deschideți aplicația sau accesați <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook.com</a> și autentificați-vă în cont.</li>
+                    <li>Faceți clic pe poza de profil din colțul din dreapta sus și selectați <strong>Setări și confidențialitate &gt; Setări</strong>.</li>
+                    <li>În bara laterală stângă, accesați secțiunea <strong>Aplicații și site-uri web</strong> (sau <em>Apps and Websites</em>).</li>
+                    <li>În lista de aplicații active sau expirate, căutați <strong>Iubeste Sanatatea</strong>.</li>
+                    <li>Bifați căsuța corespunzătoare și apăsați butonul <strong>Elimină</strong> (<em>Remove</em>).</li>
+                    <li>Bifați opțiunea opțională prin care solicitați ștergerea tuturor postărilor, clipurilor sau evenimentelor create de aplicație și confirmați apăsând <strong>Elimină</strong>.</li>
+                </ol>
+            </div>
+
+            <div class="step-box">
+                <h3>✉️ Metoda 2: Solicitare manuală prin e-mail (Procesare rapidă)</h3>
+                <p>Dacă doriți ca echipa noastră tehnică să verifice și să șteargă manual orice eventuale date de contact, mesaje sau interacțiuni din sistemele noastre:</p>
+                <ol>
+                    <li>Trimiteți un e-mail la <a href="mailto:simionescudarius23@gmail.com">simionescudarius23@gmail.com</a> sau <a href="mailto:contact@iubestesanatatea.ro">contact@iubestesanatatea.ro</a>.</li>
+                    <li>Subiectul e-mailului: <code>Cerere Ștergere Date — Iubește Sănătatea</code>.</li>
+                    <li>Menționați numele sau link-ul profilului de Facebook asociat cu interacțiunea.</li>
+                </ol>
+                <p>
+                    Vă vom trimite o confirmare de soluționare în termen de <strong>48 de ore</strong> de la primirea solicitării, confirmând ștergerea ireversibilă a datelor.
+                </p>
+            </div>
+
+            <h2>Date de contact</h2>
+            <p>Pentru orice întrebare referitoare la protecția datelor, ne puteți contacta oricând:</p>
+            <ul>
+                <li><strong>E-mail Administrator:</strong> <a href="mailto:simionescudarius23@gmail.com">simionescudarius23@gmail.com</a></li>
+                <li><strong>E-mail General:</strong> <a href="mailto:contact@iubestesanatatea.ro">contact@iubestesanatatea.ro</a></li>
+            </ul>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 <strong>Iubește Sănătatea</strong>. Toate drepturile rezervate. • <a href="index.html">Acasă</a> • <a href="privacy.html">Politica de Confidențialitate</a> • <a href="terms.html">Termeni și Condiții</a></p>
+    </footer>
+
+</body>
+</html>

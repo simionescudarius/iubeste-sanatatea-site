@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iubește Sănătatea — Nutriție Curată & Stil de Viață Echilibrat</title>
+    <meta name="description" content="Comunitatea Iubește Sănătatea — Ghidul tău zilnic pentru alimentație curată, nutriție bazată pe știință, rețete naturale și superalimente locale.">
+    <meta property="og:title" content="Iubește Sănătatea — Nutriție Curată & Stil de Viață">
+    <meta property="og:description" content="Ghidul tău zilnic pentru alimentație curată, nutriție bazată pe știință și un stil de viață echilibrat.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #236B2B;
+            --primary-dark: #194F1F;
+            --primary-light: #E8F5E9;
+            --accent: #2E7D32;
+            --accent-warm: #E28743;
+            --bg-page: #FAF9F6;
+            --bg-card: #FFFFFF;
+            --text-main: #1C2826;
+            --text-muted: #5C6F68;
+            --border: #E5E9E5;
+            --shadow: 0 10px 30px -5px rgba(28, 40, 38, 0.06), 0 4px 10px -2px rgba(28, 40, 38, 0.03);
+            --radius-lg: 20px;
+            --radius-md: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            background: #FFFFFF;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: blur(8px);
+            background-color: rgba(255, 255, 255, 0.95);
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--primary-dark);
+            font-weight: 700;
+            font-size: 1.25rem;
+            letter-spacing: -0.3px;
+        }
+
+        .brand-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--primary-light);
+            color: var(--primary);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .btn-fb {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--primary);
+            color: #FFFFFF !important;
+            padding: 10px 18px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .btn-fb:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+        }
+
+        .hero {
+            max-width: 1100px;
+            margin: 60px auto 40px;
+            padding: 0 24px;
+            text-align: center;
+        }
+
+        .badge-hero {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--primary-light);
+            color: var(--primary);
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 3rem;
+            line-height: 1.2;
+            color: var(--primary-dark);
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
+        }
+
+        .hero-lead {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 720px;
+            margin: 0 auto 36px;
+            font-weight: 400;
+        }
+
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #FFFFFF;
+            color: var(--text-main);
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: 600;
+            border: 1px solid var(--border);
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-primary-large {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--primary);
+            color: #FFFFFF;
+            padding: 12px 26px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 6px 18px rgba(35, 107, 43, 0.25);
+            transition: all 0.2s;
+        }
+
+        .btn-primary-large:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 22px rgba(35, 107, 43, 0.35);
+        }
+
+        .pillars-section {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 24px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-header h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2.1rem;
+            color: var(--primary-dark);
+            margin-bottom: 12px;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        .grid-pillars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+        }
+
+        .pillar-card {
+            background: var(--bg-card);
+            padding: 30px 24px;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            transition: transform 0.2s, border-color 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pillar-card:hover {
+            transform: translateY(-4px);
+            border-color: #C8E6C9;
+        }
+
+        .pillar-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--primary-light);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 18px;
+        }
+
+        .pillar-card h3 {
+            font-size: 1.2rem;
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .pillar-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.55;
+        }
+
+        .legal-banner {
+            max-width: 1100px;
+            margin: 60px auto 80px;
+            padding: 0 24px;
+        }
+
+        .legal-card {
+            background: #FFFFFF;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border);
+            padding: 40px;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .legal-card-header h3 {
+            font-size: 1.4rem;
+            color: var(--primary-dark);
+            margin-bottom: 8px;
+        }
+
+        .legal-card-header p {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        .legal-links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+        }
+
+        .legal-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            padding: 18px;
+            border-radius: var(--radius-md);
+            background: #FAF9F6;
+            border: 1px solid var(--border);
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.2s;
+        }
+
+        .legal-item:hover {
+            background: var(--primary-light);
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        .legal-item-icon {
+            font-size: 1.6rem;
+            line-height: 1;
+        }
+
+        .legal-item-content h4 {
+            font-size: 1.05rem;
+            color: var(--primary-dark);
+            margin-bottom: 4px;
+        }
+
+        .legal-item-content p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
+        footer {
+            background: #FFFFFF;
+            border-top: 1px solid var(--border);
+            padding: 40px 24px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .footer-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-nav {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-nav a:hover {
+            color: var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            .hero {
+                margin-top: 40px;
+            }
+            .legal-card {
+                padding: 24px;
+            }
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="brand">
+                <span class="brand-icon">🌿</span>
+                <span>Iubește Sănătatea</span>
+            </a>
+            <nav class="nav-links">
+                <a href="privacy.html">Confidențialitate</a>
+                <a href="terms.html">Termeni</a>
+                <a href="https://www.facebook.com/101832898177730" target="_blank" rel="noopener noreferrer" class="btn-fb">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                    <span>Pagina Facebook</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="badge-hero">
+                <span>🌱</span> Nutriție Curată & Știință Aplicată
+            </div>
+            <h1>Iubește Sănătatea</h1>
+            <p class="hero-lead">
+                Ghidul tău practic pentru o alimentație conștientă, fără diete restrictive. Învățăm cum să combinăm ingredientele naturale, să valorificăm superalimentele locale și să avem grijă de corpul nostru în fiecare zi.
+            </p>
+            <div class="hero-actions">
+                <a href="https://www.facebook.com/101832898177730" target="_blank" rel="noopener noreferrer" class="btn-primary-large">
+                    <span>Urmărește-ne pe Facebook</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                </a>
+                <a href="#legal" class="btn-secondary">Informații Legale & GDPR</a>
+            </div>
+        </section>
+
+        <section class="pillars-section">
+            <div class="section-header">
+                <h2>Cei 4 Piloni ai Comunității Noastre</h2>
+                <p>Educație nutrițională simplificată, dovedită științific și adaptată stilului de viață modern.</p>
+            </div>
+
+            <div class="grid-pillars">
+                <div class="pillar-card">
+                    <div class="pillar-icon">🥗</div>
+                    <h3>Farfuria Curată</h3>
+                    <p>Ordinea corectă a alimentelor la fiecare masă (fibre, proteine, carbohidrați) pentru a preveni vârfurile glicemice și oboseala de după-amiază.</p>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-icon">🇷🇴</div>
+                    <h3>Superalimente Locale</h3>
+                    <p>Nutriție bogată fără costuri uriașe: cătina românească, sfecla roșie, nucile, semințele de dovleac și varza murată plină de probiotice.</p>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-icon">🦠</div>
+                    <h3>Microbiom & Digestie</h3>
+                    <p>Alimente fermentate tradiționale, fibre prebiotice și principii simple pentru un tract digestiv sănătos și o imunitate rezistentă.</p>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-icon">🔍</div>
+                    <h3>Mituri Demontate</h3>
+                    <p>Analizăm critic etichetele alimentare, demascăm zaharurile ascunse și aducem claritate bazată pe studii științifice verificate.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="legal-banner" id="legal">
+            <div class="legal-card">
+                <div class="legal-card-header">
+                    <h3>Documente Oficiale & Politici de Confidențialitate</h3>
+                    <p>Transparență deplină pentru comunitatea noastră și conformitate cu reglementările Meta for Developers și GDPR (UE 2016/679).</p>
+                </div>
+
+                <div class="legal-links-grid">
+                    <a href="privacy.html" class="legal-item">
+                        <div class="legal-item-icon">🔒</div>
+                        <div class="legal-item-content">
+                            <h4>Politica de Confidențialitate</h4>
+                            <p>Cum protejăm datele tale, modul de funcționare al cookie-urilor și drepturile tale GDPR.</p>
+                        </div>
+                    </a>
+
+                    <a href="terms.html" class="legal-item">
+                        <div class="legal-item-icon">⚖️</div>
+                        <div class="legal-item-content">
+                            <h4>Termeni și Condiții</h4>
+                            <p>Reguli de utilizare, drepturi de autor și declinarea explicită a responsabilității medicale.</p>
+                        </div>
+                    </a>
+
+                    <a href="deletion.html" class="legal-item">
+                        <div class="legal-item-icon">🗑️</div>
+                        <div class="legal-item-content">
+                            <h4>Ștergere Date Utilizator</h4>
+                            <p>Instrucțiuni pas cu pas pentru solicitarea sau ștergerea automată a datelor tale.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <p>&copy; 2026 <strong>Iubește Sănătatea</strong>. Toate drepturile rezervate.</p>
+                <p style="font-size: 0.8rem; margin-top: 4px; color: #8C9E97;">Conținut cu scop exclusiv educativ și informativ. Nu înlocuiește consultul medical de specialitate.</p>
+            </div>
+            <nav class="footer-nav">
+                <a href="index.html">Acasă</a>
+                <a href="privacy.html">Politica de Confidențialitate</a>
+                <a href="terms.html">Termeni și Condiții</a>
+                <a href="deletion.html">Ștergere Date</a>
+                <a href="mailto:contact@iubestesanatatea.ro">Contact</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>

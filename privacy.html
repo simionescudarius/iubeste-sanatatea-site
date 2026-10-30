@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politica de Confidențialitate — Iubește Sănătatea</title>
+    <meta name="description" content="Politica oficială de confidențialitate și protecție a datelor pentru comunitatea Iubește Sănătatea și aplicațiile conexe Meta for Developers.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #236B2B;
+            --primary-dark: #194F1F;
+            --primary-light: #E8F5E9;
+            --accent: #2E7D32;
+            --bg-page: #FAF9F6;
+            --bg-card: #FFFFFF;
+            --text-main: #1C2826;
+            --text-muted: #4F615A;
+            --border: #E5E9E5;
+            --shadow: 0 4px 20px -2px rgba(28, 40, 38, 0.05);
+            --radius-lg: 16px;
+            --radius-md: 10px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            background: #FFFFFF;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        .nav-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--primary-dark);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .brand-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--primary-light);
+            color: var(--primary);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-left: 18px;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .content-container {
+            max-width: 900px;
+            margin: 40px auto 80px;
+            padding: 0 24px;
+        }
+
+        .article-card {
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border);
+            padding: 48px;
+            box-shadow: var(--shadow);
+        }
+
+        .badge-doc {
+            display: inline-block;
+            background: var(--primary-light);
+            color: var(--primary);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2.4rem;
+            color: var(--primary-dark);
+            margin-bottom: 12px;
+            line-height: 1.25;
+        }
+
+        .meta-info {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 32px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            color: var(--primary-dark);
+            margin: 36px 0 16px;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            color: var(--text-main);
+            margin: 20px 0 10px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #2F3E37;
+        }
+
+        ul, ol {
+            margin: 12px 0 20px 24px;
+            color: #2F3E37;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        a:hover {
+            color: var(--primary-dark);
+        }
+
+        .callout-box {
+            background: #F4F7F4;
+            border-left: 4px solid var(--primary);
+            border-radius: var(--radius-md);
+            padding: 20px;
+            margin: 24px 0;
+        }
+
+        .callout-box h4 {
+            color: var(--primary-dark);
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        .highlight-card {
+            background: #E8F5E9;
+            border: 1px solid #C8E6C9;
+            border-radius: var(--radius-md);
+            padding: 24px;
+            margin: 28px 0;
+        }
+
+        .highlight-card h3 {
+            color: var(--primary-dark);
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+
+        code {
+            background: #F0F2F0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #194F1F;
+        }
+
+        footer {
+            background: #FFFFFF;
+            border-top: 1px solid var(--border);
+            padding: 30px 24px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            .article-card {
+                padding: 28px 20px;
+            }
+            h1 {
+                font-size: 1.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="brand">
+                <span class="brand-icon">🌿</span>
+                <span>Iubește Sănătatea</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Acasă</a>
+                <a href="terms.html">Termeni</a>
+                <a href="deletion.html">Ștergere Date</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-container">
+        <article class="article-card">
+            <div class="badge-doc">Document Oficial GDPR & Meta</div>
+            <h1>Politica de Confidențialitate</h1>
+            <div class="meta-info">
+                Ultima actualizare: 30 Octombrie 2026 • Conform Regulamentului (UE) 2016/679 (GDPR) și politicilor Meta Platforms, Inc.
+            </div>
+
+            <p>
+                Confidențialitatea vizitatorilor și a membrilor comunității noastre este prioritară pentru <strong>Iubește Sănătatea</strong>. Această Politică de Confidențialitate explică în mod transparent modul în care colectăm, utilizăm, stocăm și protejăm datele dumneavoastră atunci când interacționați cu website-ul nostru, cu pagina noastră de Facebook și cu instrumentele noastre digitale asociate platformei Meta for Developers.
+            </p>
+
+            <h2>1. Cine suntem și date de contact</h2>
+            <p>
+                Comunitatea online <strong>Iubește Sănătatea</strong> (reprezentată prin portalul web oficial și pagina de Facebook <code>facebook.com/iubestesanatate</code>) promovează educația nutrițională, alimentele neprocesate, rețetele naturale și stilul de viață echilibrat.
+            </p>
+            <p>
+                Pentru orice întrebare referitoare la prelucrarea datelor cu caracter personal sau pentru exercitarea drepturilor dumneavoastră, ne puteți contacta la:
+            </p>
+            <ul>
+                <li><strong>E-mail de contact:</strong> <a href="mailto:contact@iubestesanatatea.ro">contact@iubestesanatatea.ro</a></li>
+                <li><strong>E-mail administrator tehnic:</strong> <a href="mailto:simionescudarius23@gmail.com">simionescudarius23@gmail.com</a></li>
+                <li><strong>Canal direct:</strong> Mesaj privat pe pagina oficială de Facebook <em>Iubește Sănătatea</em>.</li>
+            </ul>
+
+            <h2>2. Ce date colectăm</h2>
+            <p>În funcție de modul în care interacționați cu noi, putem prelucra următoarele categorii de date:</p>
+            <ul>
+                <li><strong>Date publice de profil de pe rețelele sociale:</strong> Numele de utilizator, fotografia de profil și reacțiile/comentariile dumneavoastră atunci când lăsați un comentariu, distribuiți o postare sau apreciați pagina noastră de Facebook.</li>
+                <li><strong>Date de comunicare directă:</strong> Adresa dumneavoastră de e-mail și conținutul mesajelor atunci când ne contactați prin e-mail sau prin intermediul Facebook Messenger.</li>
+                <li><strong>Date agregate și statistice (fără identificare directă):</strong> Informații furnizate prin <em>Meta Business Suite / Facebook Page Insights</em> (număr de vizualizări, distribuție demografică pe categorii de vârstă și orașe, rata de interacțiune). Aceste date sunt furnizate exclusiv sub formă agregată și nu ne permit identificarea directă a unei persoane fizice.</li>
+                <li><strong>Date tehnice de navigare:</strong> Adresă IP anonimizată, tipul de browser, dispozitivul utilizat și data accesării (colectate automat de serverele de găzduire GitHub Pages pentru asigurarea integrității și securității tehnice).</li>
+            </ul>
+
+            <h2>3. Temeiul legal al prelucrării (GDPR)</h2>
+            <p>Prelucrarea datelor se realizează în deplină conformitate cu art. 6 din Regulamentul General privind Protecția Datelor (GDPR):</p>
+            <ul>
+                <li><strong>Consimțământul dumneavoastră (Art. 6 alin. 1 lit. a):</strong> Atunci când ne transmiteți voluntar un mesaj, vă abonați la noutăți sau acceptați cookie-uri opționale.</li>
+                <li><strong>Interesul legitim (Art. 6 alin. 1 lit. f):</strong> Pentru moderarea comunității, prevenirea spam-ului, securitatea infrastructurii tehnice și îmbunătățirea calității materialelor nutriționale pe baza interesului manifestat de audiență.</li>
+            </ul>
+
+            <h2>4. Integrarea cu platforma Meta / Facebook for Developers</h2>
+            <p>
+                Aplicația noastră tehnică înregistrată în Meta Developers (App ID: <code>1339377448285900</code> — <em>Iubeste Sanatatea</em>) este utilizată exclusiv pentru administrarea conținutului editorial, programarea postărilor educaționale și analiza anonimizată a performanței paginii oficiale prin intermediul Facebook Graph API oficial.
+            </p>
+            <div class="callout-box">
+                <h4>🔒 Respectarea Politicii de Date Meta</h4>
+                <p>
+                    Nu solicităm, nu stocăm și nu comercializăm date sensibile de profil ale utilizatorilor Facebook. Orice interacțiune realizată pe platforma Facebook este guvernată în mod direct și de <a href="https://www.facebook.com/privacy/policy" target="_blank" rel="noopener noreferrer">Politica de Confidențialitate Meta</a>.
+                </p>
+            </div>
+
+            <h2>5. Cookie-uri și Tehnologii de Urmărire</h2>
+            <p>
+                Website-ul nostru static găzduit pe GitHub Pages utilizează exclusiv cookie-uri tehnice esențiale necesare afișării corecte și securității navigării. Nu utilizăm scripturi intruzive de urmărire între site-uri terțe (cross-site tracking) și nu vindem date de comportament către rețele terțe de publicitate.
+            </p>
+
+            <h2>6. Drepturile Dumneavoastră conform GDPR</h2>
+            <p>În calitate de persoană vizată, beneficiați de următoarele drepturi garantate prin lege:</p>
+            <ol>
+                <li><strong>Dreptul de acces (Art. 15):</strong> Puteți solicita o confirmare dacă prelucrăm sau nu datele dumneavoastră.</li>
+                <li><strong>Dreptul la rectificare (Art. 16):</strong> Puteți cere corectarea datelor inexacte sau completarea acestora.</li>
+                <li><strong>Dreptul la ștergerea datelor („Dreptul de a fi uitat”, Art. 17):</strong> Puteți solicita ștergerea completă a datelor dumneavoastră din evidențele noastre.</li>
+                <li><strong>Dreptul la restricționarea prelucrării (Art. 18):</strong> Puteți solicita blocarea temporară a prelucrării în anumite circumstanțe.</li>
+                <li><strong>Dreptul la portabilitatea datelor (Art. 20):</strong> Puteți primi datele pe care ni le-ați furnizat într-un format structurat și lizibil automat.</li>
+                <li><strong>Dreptul la opoziție (Art. 21):</strong> Vă puteți opune în orice moment prelucrării întemeiate pe interes legitim.</li>
+                <li><strong>Dreptul de a depune plângere:</strong> Aveți dreptul de a vă adresa <em>Autorității Naționale de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP)</em> din România (<a href="https://www.dataprotection.ro" target="_blank" rel="noopener noreferrer">www.dataprotection.ro</a>).</li>
+            </ol>
+
+            <div class="highlight-card" id="stergere-date">
+                <h3>🗑️ 7. Instrucțiuni pentru Ștergerea Datelor Utilizatorilor (User Data Deletion)</h3>
+                <p>
+                    În conformitate cu cerințele Meta for Developers și GDPR, orice utilizator are dreptul de a solicita ștergerea oricăror date asociate cu utilizarea serviciilor sau paginii noastre.
+                </p>
+                <p>Pentru a solicita ștergerea datelor, aveți la dispoziție următoarele două modalități simple:</p>
+                <ul>
+                    <li>
+                        <strong>Opțiunea 1 — Solicitare directă prin e-mail:</strong> Trimiteți un mesaj către <a href="mailto:simionescudarius23@gmail.com">simionescudarius23@gmail.com</a> sau <a href="mailto:contact@iubestesanatatea.ro">contact@iubestesanatatea.ro</a> cu subiectul <em>„Solicitare Ștergere Date — Iubește Sănătatea”</em>, menționând numele dumneavoastră sau link-ul profilului de Facebook. Cererea va fi procesată în maximum 48 de ore, iar datele vor fi șterse definitiv.
+                    </li>
+                    <li>
+                        <strong>Opțiunea 2 — Eliminarea din contul dumneavoastră de Facebook:</strong>
+                        <ol style="margin-top: 8px;">
+                            <li>Accesați contul dumneavoastră de Facebook și mergeți la <strong>Setări și confidențialitate &gt; Setări</strong>.</li>
+                            <li>În meniul din stânga, selectați <strong>Aplicații și site-uri web</strong>.</li>
+                            <li>Căutați aplicația <strong>Iubeste Sanatatea</strong> și faceți clic pe butonul <strong>Elimină</strong>.</li>
+                        </ol>
+                    </li>
+                </ul>
+                <p style="margin-bottom: 0;">Pentru detalii suplimentare, consultați pagina dedicată: <a href="deletion.html">Instrucțiuni Ștergere Date</a>.</p>
+            </div>
+
+            <h2>8. Securitatea și Păstrarea Datelor</h2>
+            <p>
+                Implementăm măsuri tehnice și organizatorice adecvate pentru a proteja datele împotriva accesului neautorizat, modificării, divulgării sau distrugerii. Datele de corespondență prin e-mail sunt păstrate doar pe perioada necesară soluționării solicitărilor dumneavoastră, după care sunt arhivate în condiții de siguranță sau șterse conform cerințelor legale.
+            </p>
+
+            <h2>9. Actualizarea acestei Politici</h2>
+            <p>
+                Ne rezervăm dreptul de a actualiza periodic această Politică de Confidențialitate pentru a reflecta eventuale modificări legislative sau funcționale. Orice revizuire va fi semnalată prin actualizarea datei de la începutul acestui document.
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 <strong>Iubește Sănătatea</strong>. Toate drepturile rezervate. • <a href="index.html">Acasă</a> • <a href="terms.html">Termeni și Condiții</a> • <a href="deletion.html">Ștergere Date</a></p>
+    </footer>
+
+</body>
+</html>

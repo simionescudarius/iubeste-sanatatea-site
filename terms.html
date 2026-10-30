@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termeni și Condiții de Utilizare — Iubește Sănătatea</title>
+    <meta name="description" content="Termenii și condițiile oficiale de utilizare pentru website-ul și comunitatea Iubește Sănătatea, incluzând declinarea explicită a responsabilității medicale.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #236B2B;
+            --primary-dark: #194F1F;
+            --primary-light: #E8F5E9;
+            --accent: #2E7D32;
+            --warning-bg: #FFF8E1;
+            --warning-border: #FFE082;
+            --warning-text: #8D5400;
+            --bg-page: #FAF9F6;
+            --bg-card: #FFFFFF;
+            --text-main: #1C2826;
+            --text-muted: #4F615A;
+            --border: #E5E9E5;
+            --shadow: 0 4px 20px -2px rgba(28, 40, 38, 0.05);
+            --radius-lg: 16px;
+            --radius-md: 10px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            background: #FFFFFF;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        .nav-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--primary-dark);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .brand-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--primary-light);
+            color: var(--primary);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-left: 18px;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .content-container {
+            max-width: 900px;
+            margin: 40px auto 80px;
+            padding: 0 24px;
+        }
+
+        .article-card {
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border);
+            padding: 48px;
+            box-shadow: var(--shadow);
+        }
+
+        .badge-doc {
+            display: inline-block;
+            background: var(--primary-light);
+            color: var(--primary);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2.4rem;
+            color: var(--primary-dark);
+            margin-bottom: 12px;
+            line-height: 1.25;
+        }
+
+        .meta-info {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 32px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            color: var(--primary-dark);
+            margin: 36px 0 16px;
+            font-weight: 700;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #2F3E37;
+        }
+
+        ul, ol {
+            margin: 12px 0 20px 24px;
+            color: #2F3E37;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        a:hover {
+            color: var(--primary-dark);
+        }
+
+        .medical-disclaimer-box {
+            background: var(--warning-bg);
+            border: 2px solid var(--warning-border);
+            border-radius: var(--radius-md);
+            padding: 26px;
+            margin: 28px 0;
+        }
+
+        .medical-disclaimer-box h3 {
+            color: var(--warning-text);
+            font-size: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .medical-disclaimer-box p {
+            color: #5D3E00;
+            font-size: 0.98rem;
+            line-height: 1.65;
+            margin-bottom: 12px;
+        }
+
+        .medical-disclaimer-box p:last-child {
+            margin-bottom: 0;
+            font-weight: 600;
+        }
+
+        .info-box {
+            background: #F4F7F4;
+            border-left: 4px solid var(--primary);
+            border-radius: var(--radius-md);
+            padding: 20px;
+            margin: 24px 0;
+        }
+
+        footer {
+            background: #FFFFFF;
+            border-top: 1px solid var(--border);
+            padding: 30px 24px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            .article-card {
+                padding: 28px 20px;
+            }
+            h1 {
+                font-size: 1.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="brand">
+                <span class="brand-icon">🌿</span>
+                <span>Iubește Sănătatea</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Acasă</a>
+                <a href="privacy.html">Confidențialitate</a>
+                <a href="deletion.html">Ștergere Date</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-container">
+        <article class="article-card">
+            <div class="badge-doc">Termeni Legali & Disclaimer</div>
+            <h1>Termeni și Condiții de Utilizare</h1>
+            <div class="meta-info">
+                Ultima actualizare: 30 Octombrie 2026 • Aplicabil pentru website-ul și comunitatea „Iubește Sănătatea”
+            </div>
+
+            <p>
+                Bine ați venit pe pagina oficială a comunității <strong>Iubește Sănătatea</strong>. Accesarea și utilizarea acestui website, a paginii noastre de Facebook și a materialelor digitale publicate sunt supuse următorilor termeni și condiții. Prin continuarea navigării sau interacțiunii cu conținutul nostru, vă exprimați acordul deplin cu aceste reguli.
+            </p>
+
+            <div class="medical-disclaimer-box">
+                <h3>⚠️ IMPORTANT: DECLINAREA RESPONSABILITĂȚII MEDICALE (MEDICAL DISCLAIMER)</h3>
+                <p>
+                    <strong>1. Conținut pur educațional și informativ:</strong> Toate materialele, infograficele, cardurile nutriționale, rețetele, articolele și sfaturile publicate de <em>Iubește Sănătatea</em> (pe website sau pe rețelele sociale) sunt destinate exclusiv în scopuri educative și de informare generală.
+                </p>
+                <p>
+                    <strong>2. Nu constituie act medical sau consult de specialitate:</strong> Informațiile prezentate nu reprezintă sfaturi medicale, diagnostic clinic, prescripție sau plan terapeutic individualizat. Acestea <strong>nu înlocuiesc și nu pot substitui</strong> consultul, opinia, recomandarea sau tratamentul oferit de un medic specialist, un dietetician autorizat sau un alt cadru medical calificat.
+                </p>
+                <p>
+                    <strong>3. Recomandare obligatorie pentru cititori:</strong> Consultați întotdeauna medicul dumneavoastră curant înainte de a adopta orice schimbare substanțială în alimentație, de a începe un program nutrițional nou sau de a introduce suplimente alimentare naturale, în special dacă suferiți de afecțiuni cronice, urmați un tratament medicamentos, sunteți însărcinată sau alăptați. Nu ignorați și nu amânați niciodată sfatul medical profesionist din cauza unor informații citite pe această platformă.
+                </p>
+            </div>
+
+            <h2>1. Drepturi de Proprietate Intelectuală (Copyright)</h2>
+            <p>
+                Întregul conținut publicat de <strong>Iubește Sănătatea</strong> — incluzând, dar fără a se limita la: texte originale, carduri vizuale editoriale (Split-Cards), sinteze nutriționale, elemente grafice, logo-uri, denumiri și aranjamente de conținut — este protejat de legislația națională și internațională privind drepturile de autor și proprietatea intelectuală.
+            </p>
+            <ul>
+                <li>Este permisă partajarea (Share) a postărilor și articolelor prin mecanismele oficiale ale rețelelor sociale, cu păstrarea creditului și a integrității conținutului.</li>
+                <li>Este strict interzisă copierea, reproducerea, modificarea, republicarea sau utilizarea conținutului în scopuri comerciale sau publicitare fără acordul prealabil scris al deținătorilor <em>Iubește Sănătatea</em>.</li>
+            </ul>
+
+            <h2>2. Reguli de Conduită a Comunității</h2>
+            <p>
+                Comunitatea noastră este un spațiu dedicat învățării, respectului reciproc și sprijinului pentru un stil de viață sănătos. În spațiile de comentarii și pe paginile noastre de social media:
+            </p>
+            <ul>
+                <li>Sunt interzise comentariile jignitoare, discriminatorii, discursul instigator la ură, atacurile la persoană și hărțuirea.</li>
+                <li>Sunt interzise mesajele de tip spam, promovarea nesolicitată a unor produse comerciale neautorizate, „leacuri miraculoase” nefundamentate științific sau scheme de marketing piramidal.</li>
+                <li>Ne rezervăm dreptul deplin de a modera, ascunde sau șterge orice comentariu care încalcă aceste reguli și de a bloca utilizatorii recidiviști.</li>
+            </ul>
+
+            <h2>3. Limitarea Răspunderii</h2>
+            <p>
+                Deși depunem toate eforturile pentru ca datele nutriționale și științifice prezentate să provină din surse de încredere (cum ar fi studii publicate, USDA FoodData Central, NIH etc.), nu garantăm exhaustivitatea sau absența erorilor neintenționate.
+            </p>
+            <p>
+                Fiecare organism este unic, având necesități biochimice, sensibilități și alergii individuale. <em>Iubește Sănătatea</em> și administratorii săi nu pot fi făcuți răspunzători pentru nicio reacție adversă, pierdere sau daună, directă sau indirectă, apărută ca urmare a aplicării independente a informațiilor prezentate pe această platformă.
+            </p>
+
+            <h2>4. Link-uri și Instrumente Terțe</h2>
+            <p>
+                Platforma noastră poate include trimiteri sau butoane de redirecționare către servicii externe (de exemplu: Facebook / Meta, YouTube, surse științifice). Nu avem control asupra conținutului, politicilor de securitate sau practicilor acestor entități terțe și nu ne asumăm răspunderea pentru acestea.
+            </p>
+
+            <h2>5. Modificarea Termenilor</h2>
+            <p>
+                Ne rezervăm dreptul de a revizui și actualiza acești Termeni și Condiții în orice moment, fără notificare prealabilă individuală. Continuarea utilizării platformei după publicarea versiunii actualizate constituie acceptul dumneavoastră tacit al noilor prevederi.
+            </p>
+
+            <h2>6. Legislație Aplicabilă și Soluționarea Litigiilor</h2>
+            <p>
+                Prezentele condiții sunt guvernate de legislația în vigoare din România și de reglementările Uniunii Europene. Orice eventual litigiu decurgând din utilizarea platformei va fi soluționat pe cale amiabilă sau, în subsidiar, de către instanțele judecătorești competente.
+            </p>
+
+            <h2>7. Contact</h2>
+            <p>Pentru orice întrebare, clarificare sau semnalare legată de acești Termeni, vă rugăm să ne contactați:</p>
+            <ul>
+                <li><strong>E-mail:</strong> <a href="mailto:contact@iubestesanatatea.ro">contact@iubestesanatatea.ro</a></li>
+                <li><strong>E-mail tehnic:</strong> <a href="mailto:simionescudarius23@gmail.com">simionescudarius23@gmail.com</a></li>
+            </ul>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 <strong>Iubește Sănătatea</strong>. Toate drepturile rezervate. • <a href="index.html">Acasă</a> • <a href="privacy.html">Politica de Confidențialitate</a> • <a href="deletion.html">Ștergere Date</a></p>
+    </footer>
+
+</body>
+</html>
